@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadMotos</title>
+    <link  rel="StyleSheet" href="./src/css/config.css">
+</head>
+<body>
+        <header class="cabecario">
+         <!--Imagem-->   
+         <!--<img src="./src/assets/logo_Radmotos.svg">-->  
+
+         <!-- Hambuguer Mobile-->
+         <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> -->
+
+         <!--Menu Desktop-->
+         <!--<div class="menudesk">--> 
+          <!--<p> <a href="#inicio">Inicio</a>  <a href="#produto">Produto</a> <a href="#ajuda">Suporte</a></p> -->
+         <!--</div>--> 
+        </header>
+
+         <!-- Hambuguer Mobile-->
+         <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> -->
+
+        <!--Criação do Menu-->
+        <div  class="menu"> 
+            <!--Abertura do menu-->
+            <div class="menuconfig">
+                <ul>
+                    <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                    <li onclick="exibirprod(this.value)">Produtos</li>
+                    <article class="escondida">
+                        <li><a href="#motoel">Motos Elétricas</a> </li>
+                        <li><a href="#motohi">Motos Híbridas</a></li>
+                        <li><a href="#motope">Motos Personalizadas</a></li>
+                    </article>
+                    <li>Redes Sociais</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="carrosel">
+            <img src="./src/assets/moto_Personalizada2.jfif" id="slide" class="passa">
+        </div>
+
+        <section class="prod">
+
+            <h2>Motos Elétricas</h2>
+            <div class="motoel">
+                <article>
+                    <img src="./src/assets/moto_Eletrica1.jfif">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Eletrica2.jfif">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Eletrica3.png">
+                </article>
+            </div>
+        </section>
+
+        <section class="prod">
+            <h2>Motos Elétricas</h2>
+            <div class="motohi">
+                <article>
+                    <img src="./src/assets/moto_Hibrida1.jfif">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Hibrida2.png">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Hibrida3.png">
+                </article>
+            </div>
+        </section>
+
+        <section class="prod">
+            <h2>Motos Personalizadas</h2>
+            <div class="motoper">
+                <article>
+                    <img src="./src/assets/moto_Personalizada1.jfif">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Personalizada2.jfif">
+                </article>
+                <article>
+                    <img src="./src/assets/moto_Personalizada3.jfif">
+                </article>
+            </div>
+        </section>
+
+
+        <footer>
+            <!--Fim da página, dialogar o que colocar aqui com o Kevin e Richard-->
+            <h2>Fim da pagina<h/2>
+        </footer>
+
+
+    <script src="./src/js/config.js"></script>
+</body>
+</html>
