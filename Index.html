@@ -9,15 +9,15 @@
 <body>
         <header class="cabecario">
          <!--Imagem-->   
-         <!--<img src="./src/assets/logo_Radmotos.svg">-->  
+         <img src="./src/assets/logo_Radmotos.svg">  
 
          <!-- Hambuguer Mobile-->
-         <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> -->
+         <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> --> 
 
          <!--Menu Desktop-->
-         <!--<div class="menudesk">--> 
-          <!--<p> <a href="#inicio">Inicio</a>  <a href="#produto">Produto</a> <a href="#ajuda">Suporte</a></p> -->
-         <!--</div>--> 
+         <div class="menudesk">
+          <p> <a href="#inicio">Inicio</a>  <a href="#produto">Produto</a> <a href="#ajuda">Suporte</a></p> 
+         </div>
         </header>
 
          <!-- Hambuguer Mobile-->
@@ -29,26 +29,29 @@
             <div class="menuconfig">
                 <ul>
                     <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
-                    <li onclick="exibirprod(this.value)">Produtos</li>
+                    <li onclick="exibirprod()">Produtos</li>
                     <article class="escondida">
                         <li><a href="#motoel">Motos Elétricas</a> </li>
                         <li><a href="#motohi">Motos Híbridas</a></li>
                         <li><a href="#motope">Motos Personalizadas</a></li>
                     </article>
-                    <li>Redes Sociais</li>
+                    <li><a onclick="exibirprod()">Redes Sociais</a></li>
+                    <article class="escondida">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Whatsapp</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </article>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="">Localização</a></li>
                 </ul>
-
             </div>
         </div>
 
-
-
-
-
-
-        <div class="carrosel">
-            <img src="./src/assets/moto_Personalizada2.jfif" id="slide" class="passa">
-        </div>
+       <section> 
+            <div class="carrosel">
+                <img src="./src/assets/moto_Personalizada2.jfif" id="slide" class="passa">
+            </div>
+        </section>    
 
         <section class="prod">
 
