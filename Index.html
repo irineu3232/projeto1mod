@@ -8,40 +8,44 @@
 </head>
 <body>
         <header class="cabecario">
-         <!--Imagem-->   
-         <img src="./src/assets/logo_Radmotos.svg">  
-
+         <!--Imagem-->  
+        <img src="./src/assets/logo_Radmotos.svg">  
+          
+         
          <!-- Hambuguer Mobile-->
          <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> --> 
 
          <!--Menu Desktop-->
-       <!--<div class="menudesk">-->  
-        <!-- <p> <a href="#inicio">Inicio</a>  <a href="#produto">Produto</a> <a href="#ajuda">Suporte</a></p> 
-         </div>--> 
+         <div class="menudesk">  
+           <p> <a href="#inicio">Inicio</a>  <a href="#produto">Produto</a> <a href="#ajuda">Suporte</a></p> 
+         </div> 
         </header>
 
          <!-- Hambuguer Mobile-->
          <!--<img src="./src/assets/menu_Hambuguer.png" onclick="abrirMenu()"> -->
 
-        <!--Criação do Menu-->
-        <div  class="menu"> 
+        
+         <!--Criação do Menu-->
+         <div class="btt"><img  id="menubtt" src="./src/assets/menu_Hambuguer.png"class="bttmenu" onclick="abrirMenu()"></div>
+        <div  class="menu"id="menu"> 
             <!--Abertura do menu-->
-            <div class="menuconfig">
+            <div class="menuconfig" >
                 <ul>
                     <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
-                    <li onclick="exibirprod()">Produtos</li>
-                    <article class="escondida">
-                        <li><a href="#motoel">Motos Elétricas</a> </li>
-                        <li><a href="#motohi">Motos Híbridas</a></li>
-                        <li><a href="#motope">Motos Personalizadas</a></li>
-                    </article>
-                    <li><a onclick="exibirprod()">Redes Sociais</a></li>
-                    <article class="escondida">
+                    <li onclick="exibirprod('x1')"><a>Produtos</a></li>
+                    <div id="x1" class="escondida">
+                        <li><a href="#motoel" onclick="closeMenu()">Motos Elétricas</a> </li>
+                        <li><a href="#motohi" onclick="closeMenu()">Motos Híbridas</a></li>
+                        <li><a href="#motope" onclick="closeMenu()">Motos Personalizadas</a></li>
+                    </div>
+                    <li><a onclick="exibirprod('x2')">Redes Sociais</a></li>
+                    <div id="x2" class="escondida">
                         <li><a href="">Facebook</a></li>
                         <li><a href="">Whatsapp</a></li>
                         <li><a href="">Instagram</a></li>
-                    </article>
-                    <li><a href="">Suporte</a></li>
+                    </div>
+                    <li><a href="./src/html/Fale conosco.html">Suporte</a></li>
+                    <li><a href="./src/html/devolução.html">Devolução</a></li>
                     <li><a href="">Localização</a></li>
                 </ul>
             </div>
@@ -58,28 +62,28 @@
             <h2>Motos Elétricas</h2>
             <div class="motoel">
                 <article>
-                    <img src="./src/assets/moto_Eletrica1.jfif">
+                    <a href="./src/html/Mt1.html"><img src="./src/assets/moto_Eletrica1.jfif"> </a>
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Eletrica2.jfif">
+                   <a href="./src/html/mtel2.html"> <img src="./src/assets/moto_Eletrica2.jfif" ></a>
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Eletrica3.png">
+                    <a href="./src/html/mtel3.html"><img src="./src/assets/moto_Eletrica3.png"></a>
                 </article>
             </div>
         </section>
 
         <section class="prod">
-            <h2>Motos Elétricas</h2>
+            <h2>Motos Híbridas</h2>
             <div class="motohi">
                 <article>
-                    <img src="./src/assets/moto_Hibrida1.jfif">
+                   <a href="./src/html/mthi1.html"><img src="./src/assets/moto_Hibrida1.jfif" ></a> 
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Hibrida2.png">
+                   <a href="./src/html/mthi2.html"><img src="./src/assets/moto_Hibrida2.png" ></a> 
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Hibrida3.png">
+                    <a href="./src/html/mthi3.html"><img src="./src/assets/moto_Hibrida3.png" ></a>
                 </article>
             </div>
         </section>
@@ -88,22 +92,22 @@
             <h2>Motos Personalizadas</h2>
             <div class="motoper">
                 <article>
-                    <img src="./src/assets/moto_Personalizada1.jfif">
+                    <a href="./src/html/mtpo1.html"><img src="./src/assets/moto_Personalizada1.jfif" ></a>
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Personalizada2.jfif">
+                  <a  href="./src/html/mtpo2.html"> <img src="./src/assets/moto_Personalizada2.jfif"></a> 
                 </article>
                 <article>
-                    <img src="./src/assets/moto_Personalizada3.jfif">
+                    <a href="./src/html/mtpo3.html"><img src="./src/assets/moto_Personalizada3.jfif" ></a>
                 </article>
             </div>
         </section>
 
 
         <footer>
-            <!--Fim da página, dialogar o que colocar aqui com o Kevin e Richard-->
+            <p> <img src="./src/assets/logo_Radmotos.svg" alt=""> RadMotos</p>
             <ul>   
-                <li><p><a href="">Suporte</a> <a href=""> Sobre nós</a> <a href="">Parcerias</a></p> </li>
+                <li><p><a href="./src/html/Fale conosco.html">Suporte</a>  <a href="./src/html/parcerias.html">Parcerias</a> <a href="./src/html/devolução.html">Devolução</a></p> </li>
             </ul>
             <h3>©RadMotos</h3>
         </footer>

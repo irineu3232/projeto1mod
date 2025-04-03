@@ -6,3 +6,101 @@
     font-family: sans-serif;
     font-style: italic;
 }
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.body
+{
+    max-width: 780px;
+}
+
+.cabecario
+{
+    border: 2px solid rgb(0,0,0);
+    max-width: 780px;
+    max-height: 250px;
+    background: linear-gradient(to left top, rgb(177, 177, 177), rgb(207, 201, 201))
+}
+
+
+.cabecario img
+{
+    width: 250px;
+    height: 250px;
+    transform: scale(2.5);
+    padding-bottom: 45px;
+    padding-left: 100px;
+}
+
+.menudesk
+{
+    display: none;
+}
+
+.menu
+{
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    z-index: 10; /* Z-Index coloca o elemento das divs acima de tudo.*/
+    left: 0;
+    top:0;
+    overflow-x:hidden; /*Esconde todo o fundo da página*/
+    transition: all 0.5s;
+    position:fixed;
+}
+
+.btt
+{
+    position: relative;
+    bottom: 240px;
+    left: 10px;
+}
+.bttmenu
+{
+    width: 50px;
+    height: 40px;
+    overflow: scroll;
+    z-index: 1;
+    position: fixed;
+   
+}
+
+.menuconfig
+{
+    font-size: 1.7rem;
+    padding: 20px;
+}
+
+.menuconfig li
+{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.menuconfig a
+{
+    color: black;
+}
+
+.menuconfig a:hover
+{
+    color: purple;
+    font-weight: 900;
+    transform: scale(1.2);
+}
+
+.exibida
+{
+    display:block;
+}
+.escondida
+{
+    display: none;
+}

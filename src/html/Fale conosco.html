@@ -1,0 +1,71 @@
+<doctype Html>
+<html>   
+  <meta lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Radmotos</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+        <link name="java" href="../JavaScript/config.js">
+        <link rel="stylesheet" href="../css/preciso.css">   
+    </head>
+  <body>
+    <script href="../JavaScript/config.js">
+        function exibir_resposta(x)
+        {
+         if( document.getElementById(x).className.indexOf("exibida") ==-1)
+         {
+           document.getElementById(x).className = document.getElementById(x).className.replace("escondido","exibida");
+          }
+          else
+          {
+           document.getElementById(x).className = document.getElementById(x).className.replace("exibida","escondido"); 
+          }    
+        }
+    </script>
+    <section class="preciso">
+
+      <fieldset >
+        <legend>Áreas de dúvidas</legend>
+            <h3> Duvídas frequentes</h3>
+        <ul>
+            <li onclick="exibir_resposta('resp1')" class="pergunta">Como fazer devolução?</li>
+            <p id="resp1" class="escondido">É necessário que vá até uma das nossas concessionárias ou no final de nosso site, no fim da página</p>
+            <li onclick="exibir_resposta('resp2')" class="pergunta">Como funciona os descontos?</li>
+            <p id="resp2" class="escondido"> Os descontos são realizados através das nossas negociações realizadas com os clientes.</p>
+            <li onclick="exibir_resposta('resp3')" class="pergunta">Como falar com um superior?</li>
+            <p id="resp3" class="escondido"> Entre ná área de Preciso de um atendimento e aguarde na chamada ou vá até a concessionárias mais próxima</p>
+        </ul>
+        <br/>
+            <div class="precd">
+                <h3>Pergunta</h3>
+            </div>
+            <br/>
+            <form method="post" action="mailto:jozijozijozi18@gmail.com" enctype="text/plain" class="form1">
+             <label for="nome">Nome</label>
+             <input type="text" name="nome" id="nome"  placeholder="Escreva seu nome completo" required>    
+              <label for="rg">RG</label>
+              <input type="text" name="rg" id="Rg" placeholder="xxx.xxx.xxx-xx" required>
+
+              <h3 class="h3fin">Tipo de problema</h3>
+
+              <textarea for="preciso" rows="5" cols="150"></textarea>
+              <br/>
+              <br/>
+              <input type="reset" value="Limpar" class=" butt1">
+              <input type="submit" value="Enviar" class="butt2">
+              <br/>
+              <br/>
+              <button class="btt3"><a href="../index.html">Voltar</a></button>
+            </form>
+
+
+
+
+      </fieldset>
+    </section>
+
+
+
+
+  </body>
+</html>    
