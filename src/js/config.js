@@ -9,6 +9,23 @@ function closeMenu()
 }
 
 
+    var contador = 1; //variável pública criada fora da function
+	var img1= "./assets/moto_Eletrica1";
+	var img2="./assets/moto_Hibrida1";
+	var img3="./assets/moto_Personalizada1";
+	var tempo= 1500; //1500(milessegundos) : 1000 (milessegundo) = 1.5s
+	var exibir=setInterval("Exibindo()",tempo);
+
+    function Exibindo()
+    {
+        document.images["slide"].src=eval("img"+contador);	
+		
+		if (contador<3)
+			contador++;
+		else
+			contador=1;
+	} 
+    
 
 
 function exibirprod(x)
